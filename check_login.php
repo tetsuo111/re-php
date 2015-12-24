@@ -14,7 +14,7 @@ if(($user === 'login_name') && ($pass ==='login_email')){
   $login = 'Error';
 }
 
-//セッション変数に記録
+//セッション変数に記録 2
 $_SESSION['login'] = $login;
 
 
