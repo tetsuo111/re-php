@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 ?>
 <!DOCTYPE html>
@@ -12,15 +11,15 @@ session_start();
 <body>
 <?php
 //ログイン確認2
-if($_SESSION['login'] === 'OK'){
-//ログイン成功
-  echo 'ログイン中です';
-  }else{
-    //ログイン失敗
-    echo 'ログインしていません';
-  }
-
-
+if ($_SESSION['login'] === 'OK') {
+	//ログイン成功
+	echo 'ログイン中です';
+	echo '<br><br>';
+	echo '接続ユーザー:'.$_SESSION['name'];
+} else {
+	//ログイン失敗
+	echo 'ログインしていません';
+}
 
 ?>
 </body>

@@ -10,6 +10,8 @@ if(isset($_COOKIE[session_name()])){
   setcookie(session_name() , '' , time() -3600 , '/');
 }
 
+//セッションを破壊
+session_destroy();
 
 ?>
 <!DOCTYPE html>
@@ -19,13 +21,11 @@ if(isset($_COOKIE[session_name()])){
   <link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-まだログアウトしていません<br>
+ログアウトしました<br>
 <br>
 セッション情報($_SESSION) :
 <pre>
 <?php
-///セッション開始
-session_start();
 
 
 
@@ -34,6 +34,7 @@ session_start();
 
 
 ?>
+  <a href="login.php">ログインページに戻る</a>
 </pre>
 </body>
 </html>
