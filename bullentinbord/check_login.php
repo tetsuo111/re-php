@@ -4,11 +4,10 @@
 //セッションの生成
 session_start();
 
-require_once 'mysql_info.php';
+require_once '../sql/mysql_info.php';
 
 $user  = htmlspecialchars($_POST['name'], ENT_QUOTES);
 $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
-
 
 if ($conn) {
 	//データベースの選択

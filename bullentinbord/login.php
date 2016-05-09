@@ -2,7 +2,7 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset = utf8">
 <head>
-  <link rel="stylesheet" href="css/login.css" type="text/css" />
+  <link rel="stylesheet" href="../css/login.css" type="text/css" />
   <title>ログイン画面</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
         <div class="ease"></div>
     </div>
     <br>
-   
+
    <div class = "submit">
     <a href = "sign_up_form.php"  id = "button-blue" >SIGN UP</a>
     <div class = "ease"></div>
@@ -30,6 +30,7 @@
 
   </form>
 </div>
+  </div>
 
 </body>
 </html>

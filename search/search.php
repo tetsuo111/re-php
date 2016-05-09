@@ -6,8 +6,8 @@ preg_match()関数
  */
 
 session_start();
-require_once 'mysql_info.php';
-require_once 'header_message.php';
+require_once '../sql/mysql_info.php';
+require_once '../bullentinbord/header_message.php';
 
 $user_name     = htmlspecialchars($_POST['user_name'], ENT_QUOTES);
 $message_title = htmlspecialchars($_POST['message_title'], ENT_QUOTES);

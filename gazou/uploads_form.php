@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once'header_message.php';
+require_once '../bullentinbord/header_message.php';
 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'mysql_info.php';
+require_once '../sql/mysql_info.php';
 //ログインチェック
 require_once 'check_login_message.php';
 

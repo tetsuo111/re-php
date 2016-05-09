@@ -1,9 +1,7 @@
 <?php
 
 session_start();
-require_once'header_message.php';
-
-
+require_once '../bullentinbord//header_message.php';
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +15,8 @@ require_once'header_message.php';
 <br>
 <form action = "check_question.php" method = "post">
 この本の購入日を教えてください<br>
-<input type = "text" name = "pdate" value = "<?php echo date('Y/m/d'); ?>";>
+<input type = "text" name = "pdate" value = "<?php echo date('Y/m/d');?>";
+>
 <br><br>
 一ヶ月あたりの書籍の平均購入額を教えてください<br>
 <input type = "text" name = "pprice" value = "5000">円

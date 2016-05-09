@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-require_once 'mysql_info.php';
-
+require_once '../sql/mysql_info.php';
+require_once '../bullentinbord/header_message.php'
 
 ?>
 <!DOCTYPE html>
