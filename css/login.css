@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .title{
   position:absolute;
   left:43%;
@@ -5,15 +7,12 @@
   border-color:#000000;
 }
 
-
-
 /*全体の位置  */
 #form-main{
   width:40%;
   padding-top:10%;
   position:relative;
   left:30%;
-  
 }
 
 .form{
@@ -63,4 +62,15 @@ a#sign_up{
   width:40%;
   position:relative;
   left:30%;
+  background:#cccccc;
+  text-decoration: none;
+  font-size:1.3em;
+}
+
+input#sign_in:hover{
+  background:#777777;
+}
+
+a#sign_up:hover{
+  background:#777777;
 }
