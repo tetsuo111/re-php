@@ -5,7 +5,7 @@
 </head>
 <body>
   <p>ログイン失敗</p>
-  <a href =  "login.php">ログイン画面に戻る</a>
+  <a href =  "login.html">ログイン画面に戻る</a>
 
 
 </body>
