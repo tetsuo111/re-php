@@ -13,6 +13,7 @@
   padding-top:10%;
   position:relative;
   left:30%;
+  
 }
 
 .form{
@@ -64,7 +65,7 @@ a#sign_up{
   left:30%;
   background:#cccccc;
   text-decoration: none;
-  font-size:1.3em;
+  font-size:1.2em;
 }
 
 input#sign_in:hover{

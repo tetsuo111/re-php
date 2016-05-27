@@ -44,7 +44,7 @@ if ($row === 0) {
 
 ?>
   <p>登録が完了しました</p>
-  <p><a href = "login.php">ログイン画面に戻る</a></p>
+  <p><a href = "login.html">ログイン画面に戻る</a></p>
 
 </body>
 </html>

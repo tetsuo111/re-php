@@ -6,8 +6,8 @@ session_start();
 $_SESSION = array();
 
 //セッションIDを破壊
-if(isset($_COOKIE[session_name()])){
-  setcookie(session_name() , '' , time() -3600 , '/');
+if (isset($_COOKIE[session_name()])) {
+	setcookie(session_name(), '', time()-3600, '/');
 }
 
 //セッションを破壊
@@ -18,7 +18,7 @@ session_destroy();
 <html>
 <head>
   <title>ログアウト</title>
-  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="login.html">
 </head>
 <body>
 ログアウトしました<br>
@@ -27,14 +27,11 @@ session_destroy();
 <pre>
 <?php
 
-
-
 //$_SESSIONの中身をすべて表示
-  print_r($_SESSION);
-
+print_r($_SESSION);
 
 ?>
-  <a href="login.php">ログインページに戻る</a>
+<a href="login.html">ログインページに戻る</a>
 </pre>
 </body>
 </html>
