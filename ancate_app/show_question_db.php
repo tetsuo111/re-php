@@ -40,7 +40,7 @@ $sort = htmlspecialchars($_POST['sort'] , ENT_QUOTES);
 </tr>
 
 <?php
-require_once'mysql_info.php';
+require_once'../sql/mysql_info.php';
 $sql = 'SELECT question_id , purchase_date , purchase_price , star , lang_php, lang_perl , lang_java , lang_cs , lang_cpp , lang_basic , job , entry_date FROM question_tb 
   WHERE purchase_date >= "'.$sdate.'" AND purchase_date <= "'.$edate.'"';
 
@@ -87,6 +87,6 @@ while($row = mysqli_fetch_object($query)){
 
 ?>
 <br>
-  <a href="menu_message.php">メニューに戻る</a>
+  <a href="../bullentinbord/menu_message.php">メニューに戻る</a>
 </body>
 </html>

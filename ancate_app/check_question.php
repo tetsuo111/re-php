@@ -15,7 +15,10 @@ $pdate = htmlspecialchars($_POST['pdate'], ENT_QUOTES);
 
 $pprice = htmlspecialchars($_POST['pprice'], ENT_QUOTES);
 
-$star = htmlspecialchars($_POST['star'], ENT_QUOTES);
+if(isset($_POST['star']))
+{
+	$star = htmlspecialchars($_POST['star'], ENT_QUOTES);
+}
 
 $ver = array();
 for ($i = 0; $i < 7; $i++) {
@@ -58,7 +61,13 @@ if (is_numeric($pprice)) {
 ?>
 <br><br>
 本書の評価を教えてください(五段階)<br>
-<?php echo $star;?>
+<?php 
+
+if(isset($star))
+{
+	echo $star;
+}
+?>
 <br><br>
 興味のある言語を教えてください(複数選択可)<br>
 <?php

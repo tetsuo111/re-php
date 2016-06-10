@@ -9,7 +9,7 @@
 </head>
 <?php
 
-require_once'mysql_info.php';
+require_once'../sql/mysql_info.php';
 
 $pdate = htmlspecialchars($_POST['pdate'] , ENT_QUOTES);
 $pprice =htmlspecialchars($_POST['pprice'] , ENT_QUOTES);
